@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+
+<title>index - Fcitx 使用筆記</title>
+
+
+<link rel="canonical" href="https://foreachsam.github.io/book-util-fcitx/book/content/deb-package/">
+
+
+<meta name="author" content="foreachsam">
+
+
+<meta property="og:url" content="https://foreachsam.github.io/book-util-fcitx/book/content/deb-package/">
+<meta property="og:title" content="index - Fcitx 使用筆記">
+
+<meta name="apple-mobile-web-app-title" content="index - Fcitx 使用筆記">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
+<link rel="shortcut icon" type="image/x-icon" href="../../../../assets/images/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../../../assets/images/favicon.ico">
+<style>
+	@font-face {
+		font-family: 'Icon';
+		src: url('../../assets/fonts/icon.eot?52m981');
+		src: url('../../assets/fonts/icon.eot?#iefix52m981') format('embedded-opentype'),
+		url('../../assets/fonts/icon.woff?52m981') format('woff'),
+		url('../../assets/fonts/icon.ttf?52m981') format('truetype'),
+		url('../../assets/fonts/icon.svg?52m981#icon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+</style>
+<link rel="stylesheet" href="../../assets/stylesheets/application-0dac3e5884.css"> 
+<link rel="stylesheet" href="../../assets/stylesheets/palettes-05ab2406df.css">     
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
+<style>
+	body,
+	input {
+		font-family: 'Roboto',
+		Helvetica,
+		Arial,
+		sans-serif;
+	}
+
+	pre,
+	code {
+		font-family: 'Roboto Mono',
+		'Courier New',
+		'Courier',
+		monospace;
+	}
+</style>
+ 
+<script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+
+
+</head>
+
+
+  
+
+<body class="palette-primary-red palette-accent-light-red">
+	
+	<div class="backdrop">
+		<div class="backdrop-paper"></div>
+	</div>
+	<input class="toggle" type="checkbox" id="toggle-drawer">
+	<input class="toggle" type="checkbox" id="toggle-search">
+	<label class="toggle-button overlay" for="toggle-drawer"></label>
+	<header class="header">
+		<nav aria-label="Header">
+	<div class="bar default">
+		<div class="button button-menu" role="button" aria-label="Menu">
+			<label class="toggle-button icon icon-menu" for="toggle-drawer">
+				<span></span>
+			</label>
+		</div>
+		<div class="stretch">
+			<div class="title">
+				
+				<span class="path">
+            
+              
+                deb package <i class="icon icon-link"></i>
+              
+            
+          </span>  index
+			</div>
+		</div>
+		  
+		<div class="button button-github" role="button" aria-label="GitHub">
+			<a href="https://github.com/foreachsam/book-util-fcitx" title="@foreachsam/book-util-fcitx on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+		</div>
+		
+		<div class="button button-search" role="button" aria-label="Search">
+			<label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+		</div>
+	</div>
+	<div class="bar search">
+		<div class="button button-close" role="button" aria-label="Close">
+			<label class="toggle-button icon icon-back" for="toggle-search"></label>
+		</div>
+		<div class="stretch">
+			<div class="field">
+				<input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+			</div>
+		</div>
+		<div class="button button-reset" role="button" aria-label="Search">
+			<button class="toggle-button icon icon-close" id="reset-search"></button>
+		</div>
+	</div>
+</nav>
+	</header>
+	<main class="main">
+		
+		<div class="drawer">
+			<nav aria-label="Navigation">
+
+	<a href="https://foreachsam.github.io/book-util-fcitx/book" class="project" title="Fcitx 使用筆記">
+		<div class="banner">
+
+			<div class="name">
+				<strong>Fcitx 使用筆記<span class="version"></span></strong>
+
+			</div>
+		</div>
+	</a>
+	<div class="scrollable">
+		<div class="wrapper">
+
+			<div class="toc">
+				<ul>
+
+	
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="" title="首頁" href="../.." itemprop="url">
+			首頁
+    	</a>
+	</div>
+	
+</li>
+
+
+	
+<li>
+	<span class="section">參考文件</span>
+	<ul>
+		
+
+			
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="" title="manual" href="../reference/manual/" itemprop="url">
+			manual
+    	</a>
+	</div>
+	
+</li>
+
+
+		
+	</ul>
+</li>
+
+
+	
+<li>
+	<span class="section">deb package</span>
+	<ul>
+		
+
+			
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="current" title="index" href="./" itemprop="url">
+			index
+    	</a>
+	</div>
+	    
+	<ul>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="套件連結" href="#_1" >
+                	套件連結
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="原始碼套件連結" href="#_2" >
+                	原始碼套件連結
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="相關套件" href="#_3" >
+                	相關套件
+				</a>
+			</div>
+		</li>
+		
+	</ul>
+	 
+</li>
+
+
+		
+
+			
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="" title="fcitx-bin" href="fcitx-bin/" itemprop="url">
+			fcitx-bin
+    	</a>
+	</div>
+	
+</li>
+
+
+		
+	</ul>
+</li>
+
+
+	
+<li>
+	<span class="section">command</span>
+	<ul>
+		
+
+			
+<li>
+	<div itemscope itemtype="http://schema.org/Article">
+		<a class="" title="fcitx" href="../command/fcitx/" itemprop="url">
+			fcitx
+    	</a>
+	</div>
+	
+</li>
+
+
+		
+	</ul>
+</li>
+
+
+				</ul>
+
+				<hr>
+				<span class="section">The author</span>
+				<ul>
+	
+					<li>
+						<a href="https://foreachsam.github.io/" target="_blank" title="foreachsam">
+                  			foreachsam
+            			</a>
+					</li>
+	
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</nav>
+		</div>
+		<article class="article">
+			<div class="wrapper">
+				 <h1 id="deb-package">deb package</h1>
+<h2 id="_1">套件連結</h2>
+<ul>
+<li><a href="http://packages.ubuntu.com/xenial/fcitx-bin">fcitx-bin</a></li>
+</ul>
+<h2 id="_2">原始碼套件連結</h2>
+<ul>
+<li><a href="http://packages.ubuntu.com/source/xenial/fcitx">fcitx</a></li>
+</ul>
+<h2 id="_3">相關套件</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt showsrc fcitx</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Package: fcitx
+Binary: fcitx, fcitx-bin, fcitx-data, fcitx-libs, libfcitx-config4, libfcitx-core0, libfcitx-utils0, fcitx-libs-gclient, libfcitx-gclient0, fcitx-libs-qt, libfcitx-qt0, fcitx-libs-dev, gir1.2-fcitx-1.0, fcitx-dbg, fcitx-ui-classic, fcitx-frontend-all, fcitx-frontend-gtk2, fcitx-frontend-gtk3, fcitx-frontend-qt4, fcitx-pinyin, fcitx-qw, fcitx-table, fcitx-table-all, fcitx-table-bingchan, fcitx-table-cangjie, fcitx-table-dianbaoma, fcitx-table-erbi, fcitx-table-wanfeng, fcitx-table-wbpy, fcitx-table-wubi, fcitx-table-ziranma, fcitx-modules, fcitx-module-dbus, fcitx-module-x11, fcitx-module-lua, fcitx-module-kimpanel, fcitx-module-quickphrase-editor, fcitx-tools
+Version: 1:4.2.9.1-1ubuntu1
+Priority: optional
+Section: utils
+Maintainer: IME Packaging Team &lt;pkg-ime-devel@lists.alioth.debian.org&gt;
+Build-Depends: cmake, debhelper (&gt;= 9), extra-cmake-modules, gobject-introspection, iso-codes, qtbase5-dev, libcairo2-dev (&gt;= 1.0), libenchant-dev, libgettextpo-dev, libgirepository1.0-dev, libgtk-3-dev, libgtk2.0-dev, libicu-dev, libkvm-dev [kfreebsd-any], liblua5.2-dev | liblua5.1-0-dev, libpango1.0-dev (&gt;= 1.0), libpresage-dev (&gt;= 0.9.1-1.1~), libqt4-dev, libxkbfile-dev, libxkbcommon-dev (&gt;= 0.5.0~), libxml2-dev, x11proto-xinerama-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Directory: pool/main/f/fcitx
+Files:
+ b8d5a94bf59d1aa20da100a0b0997ef9 4347 fcitx_4.2.9.1-1ubuntu1.dsc
+ 9b566df835413a7aa964488c5b0c60d8 8684772 fcitx_4.2.9.1.orig.tar.xz
+ f0fc19721e1b195305827fd93b82541e 22952 fcitx_4.2.9.1-1ubuntu1.debian.tar.xz
+Uploaders: Aron Xu &lt;aron@debian.org&gt;, YunQiang Su &lt;wzssyqa@gmail.com&gt;
+Homepage: https://github.com/fcitx/fcitx
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/fcitx.git
+Vcs-Git: git://anonscm.debian.org/pkg-ime/fcitx.git
+Package-List:
+ fcitx deb utils optional arch=all
+ fcitx-bin deb utils optional arch=any
+ fcitx-data deb utils optional arch=all
+ fcitx-dbg deb debug extra arch=any
+ fcitx-frontend-all deb utils optional arch=all
+ fcitx-frontend-gtk2 deb utils optional arch=any
+ fcitx-frontend-gtk3 deb utils optional arch=any
+ fcitx-frontend-qt4 deb utils optional arch=any
+ fcitx-libs deb oldlibs optional arch=all
+ fcitx-libs-dev deb libdevel optional arch=any
+ fcitx-libs-gclient deb oldlibs optional arch=all
+ fcitx-libs-qt deb oldlibs optional arch=all
+ fcitx-module-dbus deb utils optional arch=any
+ fcitx-module-kimpanel deb utils optional arch=any
+ fcitx-module-lua deb utils optional arch=any
+ fcitx-module-quickphrase-editor deb utils optional arch=any
+ fcitx-module-x11 deb utils optional arch=any
+ fcitx-modules deb utils optional arch=any
+ fcitx-pinyin deb utils optional arch=any
+ fcitx-qw deb utils optional arch=any
+ fcitx-table deb utils optional arch=any
+ fcitx-table-all deb utils optional arch=all
+ fcitx-table-bingchan deb utils optional arch=all
+ fcitx-table-cangjie deb utils optional arch=all
+ fcitx-table-dianbaoma deb utils optional arch=all
+ fcitx-table-erbi deb utils optional arch=all
+ fcitx-table-wanfeng deb utils optional arch=all
+ fcitx-table-wbpy deb utils optional arch=all
+ fcitx-table-wubi deb utils optional arch=all
+ fcitx-table-ziranma deb utils optional arch=all
+ fcitx-tools deb utils optional arch=any
+ fcitx-ui-classic deb utils optional arch=any
+ gir1.2-fcitx-1.0 deb introspection optional arch=any
+ libfcitx-config4 deb libs optional arch=any
+ libfcitx-core0 deb libs optional arch=any
+ libfcitx-gclient0 deb libs optional arch=any
+ libfcitx-qt0 deb libs optional arch=any
+ libfcitx-utils0 deb libs optional arch=any
+Checksums-Sha1:
+ 3f988e6f8ea32e1a351a92a6fa008d10c4abb0b4 4347 fcitx_4.2.9.1-1ubuntu1.dsc
+ 1ed42b81bb402d8861c3bb57c4ed4c54ef27ce9e 8684772 fcitx_4.2.9.1.orig.tar.xz
+ 59dba576432f95af0d673b9c1eb3b7455dea0692 22952 fcitx_4.2.9.1-1ubuntu1.debian.tar.xz
+Checksums-Sha256:
+ 78c782403fa5758db061e8a9c80774163d9d0604a8796d4fb743bbc142d35474 4347 fcitx_4.2.9.1-1ubuntu1.dsc
+ 5337c8226417a1d4e6f88b3b1048aa73695d281ed483568a7b6a9ee849ad6c77 8684772 fcitx_4.2.9.1.orig.tar.xz
+ 9b32998a90b166a36819b30d8441ce8671502df368bdec3d9eace503812180a6 22952 fcitx_4.2.9.1-1ubuntu1.debian.tar.xz</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt-cache showsrc fcitx | grep Binary:</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Binary: fcitx, fcitx-bin, fcitx-data, fcitx-libs, libfcitx-config4, libfcitx-core0, libfcitx-utils0, fcitx-libs-gclient, libfcitx-gclient0, fcitx-libs-qt, libfcitx-qt0, fcitx-libs-dev, gir1.2-fcitx-1.0, fcitx-dbg, fcitx-ui-classic, fcitx-frontend-all, fcitx-frontend-gtk2, fcitx-frontend-gtk3, fcitx-frontend-qt4, fcitx-pinyin, fcitx-qw, fcitx-table, fcitx-table-all, fcitx-table-bingchan, fcitx-table-cangjie, fcitx-table-dianbaoma, fcitx-table-erbi, fcitx-table-wanfeng, fcitx-table-wbpy, fcitx-table-wubi, fcitx-table-ziranma, fcitx-modules, fcitx-module-dbus, fcitx-module-x11, fcitx-module-lua, fcitx-module-kimpanel, fcitx-module-quickphrase-editor, fcitx-tools</code></pre>
+				<aside class="copyright" role="note">
+					 Copyright (c) foreachsam &ndash;  Documentation built with
+					<a href="http://www.mkdocs.org" target="_blank">MkDocs</a> using the
+					<a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a> theme.
+				</aside>
+				
+				<footer class="footer">
+					
+<nav class="pagination" aria-label="Footer">
+	<div class="previous">
+		
+		<a href="../reference/manual/" title="manual">
+			<span class="direction">
+            上一頁
+          </span>
+			<div class="page">
+				<div class="button button-previous" role="button" aria-label="Previous">
+					<i class="icon icon-back"></i>
+				</div>
+				<div class="stretch">
+					<div class="title">
+						manual
+					</div>
+				</div>
+			</div>
+		</a>
+		
+	</div>
+	<div class="next">
+		
+		<a href="fcitx-bin/" title="fcitx-bin">
+			<span class="direction">
+            下一頁
+          </span>
+			<div class="page">
+				<div class="stretch">
+					<div class="title">
+						fcitx-bin
+					</div>
+				</div>
+				<div class="button button-next" role="button" aria-label="Next">
+					<i class="icon icon-forward"></i>
+				</div>
+			</div>
+		</a>
+		
+	</div>
+</nav>
+
+				</footer>
+				
+			</div>
+		</article>
+		<div class="results" role="status" aria-live="polite">
+			<div class="scrollable">
+				<div class="wrapper">
+					<div class="meta"></div>
+					<div class="list"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script>
+		var base_url = '../..';
+		var repo_id = '';
+	</script>
+	<script src="../../assets/javascripts/application-997097ee0c.js"></script>
+	
+
+
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document,
+		'script', '//www.google-analytics.com/analytics.js', 'ga');
+	/* General initialization */
+	ga('create', 'UA-56999876-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+	/* Track outbound links */
+	var buttons = document.querySelectorAll('a');
+	Array.prototype.map.call(buttons, function(item) {
+		if (item.host != document.location.host) {
+			item.addEventListener('click', function() {
+				var action = item.getAttribute('data-action') || 'follow';
+				ga('send', 'event', 'outbound', action, item.href);
+			});
+		}
+	});
+	/* Register handler to log search on blur */
+	var query = document.querySelector('.query');
+	query.addEventListener('blur', function() {
+		if (this.value) {
+			var path = document.location.pathname;
+			ga('send', 'pageview', path + '?q=' + this.value);
+		}
+	});
+</script>
+
+
+</body>
+
+</html>

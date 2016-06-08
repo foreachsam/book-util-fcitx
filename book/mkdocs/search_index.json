@@ -129,6 +129,51 @@
             "location": "/content/command/fcitx/#fcitx_1",
             "text": "\u57f7\u884c  $ dpkg -S /usr/bin/fcitx  \u986f\u793a  fcitx-bin: /usr/bin/fcitx  \u8868\u793a\u300c/usr/bin/fcitx\u300d\u662f\u5c6c\u65bc\u300c fcitx-bin \u300d\u9019\u500b\u5957\u4ef6\u3002",
             "title": "\u67e5\u8a62 fcitx \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6"
+        },
+        {
+            "location": "/content/command/fcitx-remote/",
+            "text": "fcitx-remote command\n\n\n\u89c0\u770b help\n\n\n\u57f7\u884c\n\n\n$ fcitx-remote -h\n\n\n\n\n\u986f\u793a\n\n\nUsage: fcitx-remote [OPTION]\n        -c              inactivate input method\n        -o              activate input method\n        -r              reload fcitx config\n        -t,-T           switch Active/Inactive\n        -e              Ask fcitx to exit\n        -a              print fcitx's dbus address\n        -m \nimname\n     print corresponding addon name for im\n        -s \nimname\n     switch to the input method uniquely identified by \nimname\n\n        [no option]     display fcitx state, 0 for close, 1 for inactive, 2 for acitve\n        -h              display this help and exit\n\n\n\n\n\u89c0\u770b manpage\n\n\n\u57f7\u884c\n\n\n$ man fcitx-remote\n\n\n\n\n\u6703\u770b\u5230\n\u8aaa\u660e\n\n\n\u67e5\u8a62 fcitx-remote \u653e\u5728\u90a3\u500b\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ whereis fcitx-remote\n\n\n\n\n\u986f\u793a\n\n\nfcitx-remote: /usr/bin/fcitx-remote /usr/share/man/man1/fcitx-remote.1.gz\n\n\n\n\n\u67e5\u8a62 fcitx-remote \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6\n\n\n\u57f7\u884c\n\n\n$ dpkg -S /usr/bin/fcitx-remote\n\n\n\n\n\u986f\u793a\n\n\nfcitx-bin: /usr/bin/fcitx-remote\n\n\n\n\n\u8868\u793a\u300c/usr/bin/fcitx-remote\u300d\u662f\u5c6c\u65bc\u300c\nfcitx-bin\n\u300d\u9019\u500b\u5957\u4ef6\u3002\n\n\n\u4f7f\u7528\u7bc4\u4f8b\n\n\n\u5207\u63db\u8f38\u5165\u6cd5\n\n\n\u91cd\u8907\u57f7\u884c\uff0c\u53ef\u4ee5\u5207\u63db\u8f38\u5165\u6cd5\u3002\n\n\n$ fcitx-remote -t\n\n\n\n\n\u8a3b\uff1a\n\n\n\u9019\u500b\u6307\u4ee4\uff0c\u57fa\u672c\u4e0a\u5c31\u662f\u8ddf\u300cfcitx dbus session service\u300d\u6e9d\u901a\uff0c\n\u6240\u4ee5\u4e5f\u53ef\u4ee5\u53c3\u8003\u300c\nD-Bus\u4f7f\u7528\u7b46\u8a18\n\u300d\u9019\u908a\u7d00\u9304\u7684\u76f8\u95dc\u7bc4\u4f8b\u3002\n\n\n\u5075\u6e2cfcitx\u662f\u5426\u5df2\u7d93\u57f7\u884c\n\n\n\u57f7\u884c\n\n\n$ fcitx\n\n\n\n\n\u986f\u793a\u6578\u5b57\n\n\n1\n\n\n\n\n\u63a5\u8457\u57f7\u884c\n\n\n$ echo $?\n\n\n\n\n\u986f\u793a\n\n\n0\n\n\n\n\n\u642d\u914d\u300cman \nfcitx-remote\n\u300d\u4f86\u770b\n\n\n[no option]\n       display fcitx state, 0 for close, 1 for inactive, 2 for active\n\n\n\n\n\u53e6\u5916\u642d\u914d\u53e6\u4e00\u500b\u6307\u4ee4\u300cfcitx-autostart\u300d\u7684\u5167\u5bb9\u4f86\u770b\n\n\n\u89c0\u770b\u5167\u5bb9\n\n\n$ cat /usr/bin/fcitx-autostart\n\n\n\n\n\u986f\u793a\n\n\n#!/bin/sh\n\n# sleep for a little while to avoid duplicate startup\nsleep 2\n\n# Test whether fcitx is running correctly with dbus...\nfcitx-remote \n /dev/null 2\n1\n\nif [ $? = \n1\n ]; then\n    echo \nFcitx seems is not running\n\n    fcitx\nelse\n    echo \nFcitx is running correctly.\n\nfi\n\n\n\n\nfcitx service \u82e5\u6c92\u6709\u57f7\u884c\n\n\n\u57f7\u884c\n\n\n$ fcitx-remote\n\n\n\n\n\u986f\u793a\n\n\nNot get reply\n\n\n\n\n\u63a5\u8457\u57f7\u884c\n\n\n$ echo $?\n\n\n\n\n\u986f\u793a\n\n\n1",
+            "title": "fcitx-remote"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#fcitx-remote-command",
+            "text": "",
+            "title": "fcitx-remote command"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#help",
+            "text": "\u57f7\u884c  $ fcitx-remote -h  \u986f\u793a  Usage: fcitx-remote [OPTION]\n        -c              inactivate input method\n        -o              activate input method\n        -r              reload fcitx config\n        -t,-T           switch Active/Inactive\n        -e              Ask fcitx to exit\n        -a              print fcitx's dbus address\n        -m  imname      print corresponding addon name for im\n        -s  imname      switch to the input method uniquely identified by  imname \n        [no option]     display fcitx state, 0 for close, 1 for inactive, 2 for acitve\n        -h              display this help and exit",
+            "title": "\u89c0\u770b help"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#manpage",
+            "text": "\u57f7\u884c  $ man fcitx-remote  \u6703\u770b\u5230 \u8aaa\u660e",
+            "title": "\u89c0\u770b manpage"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#fcitx-remote",
+            "text": "\u57f7\u884c  $ whereis fcitx-remote  \u986f\u793a  fcitx-remote: /usr/bin/fcitx-remote /usr/share/man/man1/fcitx-remote.1.gz",
+            "title": "\u67e5\u8a62 fcitx-remote \u653e\u5728\u90a3\u500b\u4f4d\u7f6e"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#fcitx-remote_1",
+            "text": "\u57f7\u884c  $ dpkg -S /usr/bin/fcitx-remote  \u986f\u793a  fcitx-bin: /usr/bin/fcitx-remote  \u8868\u793a\u300c/usr/bin/fcitx-remote\u300d\u662f\u5c6c\u65bc\u300c fcitx-bin \u300d\u9019\u500b\u5957\u4ef6\u3002",
+            "title": "\u67e5\u8a62 fcitx-remote \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#_1",
+            "text": "",
+            "title": "\u4f7f\u7528\u7bc4\u4f8b"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#_2",
+            "text": "\u91cd\u8907\u57f7\u884c\uff0c\u53ef\u4ee5\u5207\u63db\u8f38\u5165\u6cd5\u3002  $ fcitx-remote -t  \u8a3b\uff1a  \u9019\u500b\u6307\u4ee4\uff0c\u57fa\u672c\u4e0a\u5c31\u662f\u8ddf\u300cfcitx dbus session service\u300d\u6e9d\u901a\uff0c\n\u6240\u4ee5\u4e5f\u53ef\u4ee5\u53c3\u8003\u300c D-Bus\u4f7f\u7528\u7b46\u8a18 \u300d\u9019\u908a\u7d00\u9304\u7684\u76f8\u95dc\u7bc4\u4f8b\u3002",
+            "title": "\u5207\u63db\u8f38\u5165\u6cd5"
+        },
+        {
+            "location": "/content/command/fcitx-remote/#fcitx",
+            "text": "\u57f7\u884c  $ fcitx  \u986f\u793a\u6578\u5b57  1  \u63a5\u8457\u57f7\u884c  $ echo $?  \u986f\u793a  0  \u642d\u914d\u300cman  fcitx-remote \u300d\u4f86\u770b  [no option]\n       display fcitx state, 0 for close, 1 for inactive, 2 for active  \u53e6\u5916\u642d\u914d\u53e6\u4e00\u500b\u6307\u4ee4\u300cfcitx-autostart\u300d\u7684\u5167\u5bb9\u4f86\u770b  \u89c0\u770b\u5167\u5bb9  $ cat /usr/bin/fcitx-autostart  \u986f\u793a  #!/bin/sh\n\n# sleep for a little while to avoid duplicate startup\nsleep 2\n\n# Test whether fcitx is running correctly with dbus...\nfcitx-remote   /dev/null 2 1\n\nif [ $? =  1  ]; then\n    echo  Fcitx seems is not running \n    fcitx\nelse\n    echo  Fcitx is running correctly. \nfi  fcitx service \u82e5\u6c92\u6709\u57f7\u884c  \u57f7\u884c  $ fcitx-remote  \u986f\u793a  Not get reply  \u63a5\u8457\u57f7\u884c  $ echo $?  \u986f\u793a  1",
+            "title": "\u5075\u6e2cfcitx\u662f\u5426\u5df2\u7d93\u57f7\u884c"
         }
     ]
 }

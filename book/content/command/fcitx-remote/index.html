@@ -11,19 +11,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
 
-<title>manual - Fcitx 使用筆記</title>
+<title>fcitx-remote - Fcitx 使用筆記</title>
 
 
-<link rel="canonical" href="https://foreachsam.github.io/book-util-fcitx/book/content/reference/manual/">
+<link rel="canonical" href="https://foreachsam.github.io/book-util-fcitx/book/content/command/fcitx-remote/">
 
 
 <meta name="author" content="foreachsam">
 
 
-<meta property="og:url" content="https://foreachsam.github.io/book-util-fcitx/book/content/reference/manual/">
-<meta property="og:title" content="manual - Fcitx 使用筆記">
+<meta property="og:url" content="https://foreachsam.github.io/book-util-fcitx/book/content/command/fcitx-remote/">
+<meta property="og:title" content="fcitx-remote - Fcitx 使用筆記">
 
-<meta name="apple-mobile-web-app-title" content="manual - Fcitx 使用筆記">
+<meta name="apple-mobile-web-app-title" content="fcitx-remote - Fcitx 使用筆記">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../assets/images/favicon.ico">
@@ -91,10 +91,10 @@
 				<span class="path">
             
               
-                參考文件 <i class="icon icon-link"></i>
+                command <i class="icon icon-link"></i>
               
             
-          </span>  manual
+          </span>  fcitx-remote
 			</div>
 		</div>
 		  
@@ -161,23 +161,11 @@
 			
 <li>
 	<div itemscope itemtype="http://schema.org/Article">
-		<a class="current" title="manual" href="./" itemprop="url">
+		<a class="" title="manual" href="../../reference/manual/" itemprop="url">
 			manual
     	</a>
 	</div>
-	    
-	<ul>
-		
-		<li class="anchor" >
-			<div itemscope itemtype="http://schema.org/Article">
-				<a title="閱讀文件" href="#_1" >
-                	閱讀文件
-				</a>
-			</div>
-		</li>
-		
-	</ul>
-	 
+	
 </li>
 
 
@@ -230,7 +218,7 @@
 			
 <li>
 	<div itemscope itemtype="http://schema.org/Article">
-		<a class="" title="fcitx" href="../../command/fcitx/" itemprop="url">
+		<a class="" title="fcitx" href="../fcitx/" itemprop="url">
 			fcitx
     	</a>
 	</div>
@@ -243,11 +231,71 @@
 			
 <li>
 	<div itemscope itemtype="http://schema.org/Article">
-		<a class="" title="fcitx-remote" href="../../command/fcitx-remote/" itemprop="url">
+		<a class="current" title="fcitx-remote" href="./" itemprop="url">
 			fcitx-remote
     	</a>
 	</div>
-	
+	    
+	<ul>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="觀看 help" href="#help" >
+                	觀看 help
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="觀看 manpage" href="#manpage" >
+                	觀看 manpage
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="查詢 fcitx-remote 放在那個位置" href="#fcitx-remote" >
+                	查詢 fcitx-remote 放在那個位置
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="查詢 fcitx-remote 屬於那個套件" href="#fcitx-remote_1" >
+                	查詢 fcitx-remote 屬於那個套件
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="使用範例" href="#_1" >
+                	使用範例
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="切換輸入法" href="#_2" >
+                	切換輸入法
+				</a>
+			</div>
+		</li>
+		
+		<li class="anchor" >
+			<div itemscope itemtype="http://schema.org/Article">
+				<a title="偵測fcitx是否已經執行" href="#fcitx" >
+                	偵測fcitx是否已經執行
+				</a>
+			</div>
+		</li>
+		
+	</ul>
+	 
 </li>
 
 
@@ -277,12 +325,119 @@
 		</div>
 		<article class="article">
 			<div class="wrapper">
-				 <h1 id="manual">manual</h1>
-<h2 id="_1">閱讀文件</h2>
-<ul>
-<li>$ man 1 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man1/fcitx.1.html">fcitx</a></li>
-<li>$ man 1 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man1/fcitx-remote.1.html">fcitx-remote</a></li>
-</ul>
+				 <h1 id="fcitx-remote-command">fcitx-remote command</h1>
+<h2 id="help">觀看 help</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ fcitx-remote -h</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Usage: fcitx-remote [OPTION]
+        -c              inactivate input method
+        -o              activate input method
+        -r              reload fcitx config
+        -t,-T           switch Active/Inactive
+        -e              Ask fcitx to exit
+        -a              print fcitx's dbus address
+        -m &lt;imname&gt;     print corresponding addon name for im
+        -s &lt;imname&gt;     switch to the input method uniquely identified by &lt;imname&gt;
+        [no option]     display fcitx state, 0 for close, 1 for inactive, 2 for acitve
+        -h              display this help and exit</code></pre>
+
+
+<h2 id="manpage">觀看 manpage</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ man fcitx-remote</code></pre>
+
+
+<p>會看到<a href="http://manpages.ubuntu.com/manpages/xenial/en/man1/fcitx-remote.1.html">說明</a></p>
+<h2 id="fcitx-remote">查詢 fcitx-remote 放在那個位置</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ whereis fcitx-remote</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>fcitx-remote: /usr/bin/fcitx-remote /usr/share/man/man1/fcitx-remote.1.gz</code></pre>
+
+
+<h2 id="fcitx-remote_1">查詢 fcitx-remote 屬於那個套件</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ dpkg -S /usr/bin/fcitx-remote</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>fcitx-bin: /usr/bin/fcitx-remote</code></pre>
+
+
+<p>表示「/usr/bin/fcitx-remote」是屬於「<a href="http://packages.ubuntu.com/xenial/fcitx-bin">fcitx-bin</a>」這個套件。</p>
+<h2 id="_1">使用範例</h2>
+<h2 id="_2">切換輸入法</h2>
+<p>重複執行，可以切換輸入法。</p>
+<pre class="code"><code>$ fcitx-remote -t</code></pre>
+
+
+<p>註：</p>
+<p>這個指令，基本上就是跟「fcitx dbus session service」溝通，
+所以也可以參考「<a href="http://foreachsam.github.io/book-util-dbus/book/content/case/fcitx/basic/qdbus/">D-Bus使用筆記</a>」這邊紀錄的相關範例。</p>
+<h2 id="fcitx">偵測fcitx是否已經執行</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ fcitx</code></pre>
+
+
+<p>顯示數字</p>
+<pre class="code"><code>1</code></pre>
+
+
+<p>接著執行</p>
+<pre class="code"><code class="language-sh">$ echo $?</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>0</code></pre>
+
+
+<p>搭配「man <a href="http://manpages.ubuntu.com/manpages/xenial/en/man1/fcitx-remote.1.html">fcitx-remote</a>」來看</p>
+<pre class="code"><code>[no option]
+       display fcitx state, 0 for close, 1 for inactive, 2 for active</code></pre>
+
+
+<p>另外搭配另一個指令「fcitx-autostart」的內容來看</p>
+<p>觀看內容</p>
+<pre class="code"><code class="language-sh">$ cat /usr/bin/fcitx-autostart</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code class="language-sh">#!/bin/sh
+
+# sleep for a little while to avoid duplicate startup
+sleep 2
+
+# Test whether fcitx is running correctly with dbus...
+fcitx-remote &gt; /dev/null 2&gt;&amp;1
+
+if [ $? = &quot;1&quot; ]; then
+    echo &quot;Fcitx seems is not running&quot;
+    fcitx
+else
+    echo &quot;Fcitx is running correctly.&quot;
+fi</code></pre>
+
+
+<p>fcitx service 若沒有執行</p>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ fcitx-remote</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Not get reply</code></pre>
+
+
+<p>接著執行</p>
+<pre class="code"><code>$ echo $?</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>1</code></pre>
 				<aside class="copyright" role="note">
 					 Copyright (c) foreachsam &ndash;  Documentation built with
 					<a href="http://www.mkdocs.org" target="_blank">MkDocs</a> using the
@@ -296,7 +451,7 @@
 <nav class="pagination" aria-label="Footer">
 	<div class="previous">
 		
-		<a href="../../.." title="首頁">
+		<a href="../fcitx/" title="fcitx">
 			<span class="direction">
             上一頁
           </span>
@@ -306,7 +461,7 @@
 				</div>
 				<div class="stretch">
 					<div class="title">
-						首頁
+						fcitx
 					</div>
 				</div>
 			</div>
@@ -314,22 +469,6 @@
 		
 	</div>
 	<div class="next">
-		
-		<a href="../../deb-package/" title="index">
-			<span class="direction">
-            下一頁
-          </span>
-			<div class="page">
-				<div class="stretch">
-					<div class="title">
-						index
-					</div>
-				</div>
-				<div class="button button-next" role="button" aria-label="Next">
-					<i class="icon icon-forward"></i>
-				</div>
-			</div>
-		</a>
 		
 	</div>
 </nav>
